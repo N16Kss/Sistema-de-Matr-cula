@@ -5,26 +5,6 @@ Sistema de matrícula para uma universidade que deseja informatizar o sistema at
 ### REQUISITOS DO SISTEMA
 ## FUNCIONAIS
 
-# RF01 Secretária da universidade gera o currículo para cada semestre X
-
-# RF02 Sistema mantém informações de disciplinas professores e alunos X
-# RF03 Aluno se matricula em diciplinas X 
-# RF04 Aluno cancela matrículas em diciplinas X
-# RF05 Sistema encerra incrição quando limite alunos for atingido x 
-# RF06 Sistema deve cancelar diciplinas sem o limite mínimo de alunos x
-# RF07 Professor verifica Alunos que estão matrículados nas disciplinas X
-# RF08 Usuário loga no sistema X
-# RF09 Sistema deve permitir o cadastro de Usuarios, assim como permitir atualizações X 
-# RF10 Sistema de cobranças é notificado pelo de matrícula para cobrar o aluno
-
-
-### REGRAS DE NEGÓCIO
-
-# RN01 Limites de opç~oes por aluno
-# RN02 Capacidade Máxima da turma 
-# RN03 Número mínimo para manter um diciplina ativa 
-# RN04 Restrição de efetuar e cancelar matrícula
-
 
 | Requisito | Descrição |
 |  --- | --- | 
@@ -37,7 +17,7 @@ Sistema de matrícula para uma universidade que deseja informatizar o sistema at
 | RF07 Verificar Matriculados| Professor deve verficicar a quantidada e os alunos matriculados em cada diciplina| 
 |RF08 Notificar Cobrança | Sistema de matrículas deve notifcar o sistema de cobranças para que alunos matriculados em diciplinas possam ser cobrados |
 
-
+## REGRAS DE NEGÓCIO
 |Regras de Negócio|Descrição|
 | --- | --- |
 |RN01 Limite de opções do aluno | Sistema deve limitar a disciplinas que o aluno pode se matrícular assim como suas especificações, 1°Obrigatorias. 2 outras Optativas |
@@ -47,3 +27,4 @@ Sistema de matrícula para uma universidade que deseja informatizar o sistema at
 
  
 
+## DIAGRAMA DE CASOS DE USO
