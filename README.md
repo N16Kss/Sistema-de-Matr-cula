@@ -17,6 +17,10 @@ Sistema de matrícula para uma universidade que deseja informatizar o sistema at
 | RF07 Verificar Matriculados| Professor deve verficicar a quantidada e os alunos matriculados em cada diciplina| 
 |RF08 Notificar Cobrança | Sistema de matrículas deve notifcar o sistema de cobranças para que alunos matriculados em diciplinas possam ser cobrados |
 
+
+
+
+
 ## REGRAS DE NEGÓCIO
 |Regras de Negócio|Descrição|
 | --- | --- |
@@ -28,3 +32,27 @@ Sistema de matrícula para uma universidade que deseja informatizar o sistema at
  
 
 ## DIAGRAMA DE CASOS DE USO
+
+
+
+
+## ESPECIFICAÇÕES
+Status do Aluno Existe
+
+
+
+
+
+## V2
+
+
+* NOVO REQUISITO
+|Requisito|Descrição|
+|RFO9 Histórico de Disciplinas| Sistema deve manter histórico de disciplinas cursadas|
+
+
+
+
+* NOVO REGRA DE NEGÓCIO
+|RN05 Status Aluno| Apenas alunos **Ativos** serão contabilizados, nos históricos, e nas Matrículas|
+
