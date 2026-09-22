@@ -34,13 +34,8 @@ Sistema de matrícula para uma universidade que deseja informatizar o sistema at
 ## DIAGRAMA DE CASOS DE USO
 
 
-
-
 ## ESPECIFICAÇÕES
 Status do Aluno Existe
-
-
-
 
 
 ## V2
@@ -53,6 +48,6 @@ Status do Aluno Existe
 
 
 
-* NOVO REGRA DE NEGÓCIO
+* NOVA REGRA DE NEGÓCIO
 |RN05 Status Aluno| Apenas alunos **Ativos** serão contabilizados, nos históricos, e nas Matrículas|
 
