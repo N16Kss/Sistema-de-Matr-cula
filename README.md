@@ -46,8 +46,32 @@ Status do Aluno Existe
 |RFO9 Histórico de Disciplinas| Sistema deve manter histórico de disciplinas cursadas|
 
 
-
-
 * NOVA REGRA DE NEGÓCIO
 |RN05 Status Aluno| Apenas alunos **Ativos** serão contabilizados, nos históricos, e nas Matrículas|
+
+
+## V3 
+
+* NOVO REQUISITOO
+
+|RF10 Manter histórico de disciplinas e turmas| Um aluno deve manter seu histórico de disciplinas cursadas e turmas p/cada disciplina|
+
+* ALTERAÇÃO DE REQUISITO
+
+| RF05 Encerramento de **turma**| Sistema deve encerrar incrição quando limite de alunos de turma for atingido|
+| RF06 Cancelamento de **turma** | Sistema deve cancelar turmas sem  mínimo de alunos inscritos|
+
+* ALTERAÇÃO DE REGRA DE NEGÓCIO
+
+|RN03 Numero mínimo para manter **turma** ativa | Número mínimo de alunos inscritos para manter uma **turma** ativa deve ser 3 |
+
+
+
+
+## MODELAGENS
+
+- Professores e alunos são associados a turmas e não diretamente a disciplinas 
+- Uma turma deve estar associada a uma disciplina
+- Uma disciplina pode ter várias turmas, sendo que essas turmas devem ser idependentes entre si
+
 
