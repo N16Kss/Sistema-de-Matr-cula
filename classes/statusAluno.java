@@ -1,6 +1,7 @@
-public enum statusAluno {
+public enum StatusAluno {
 
     INATIVO,
     ATIVO,
+    FORMADO
     
 }

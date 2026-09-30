@@ -74,4 +74,29 @@ Status do Aluno Existe
 - Uma turma deve estar associada a uma disciplina
 - Uma disciplina pode ter várias turmas, sendo que essas turmas devem ser idependentes entre si
 
+## Implementação inicial
+
+As classes Java persistem os dados em arquivos binários na pasta `dados/`, relativa ao diretório de execução. O armazenamento substitui cada arquivo por meio de gravação temporária, reduzindo o risco de arquivos parcialmente gravados.
+
+| Arquivo | Dados |
+| --- | --- |
+| `usuarios.bin` | Alunos, professores e secretarias; senhas armazenadas com hash PBKDF2 e salt |
+| `cursos.bin`, `disciplinas.bin`, `turmas.bin` | Catálogo e turmas do semestre |
+| `matriculas.bin`, `periodos-matricula.bin` | Matrículas, histórico e períodos de inscrição |
+| `curriculos.bin` | Currículos semestrais gerados |
+| `fila-cobranca.bin` | Eventos pendentes para integração com o sistema de cobrança |
+
+Para RN01, a implementação inicial interpreta a regra como limite de uma disciplina obrigatória e duas optativas por aluno/semestre. A fila de cobrança persiste os eventos, mas o envio ao sistema externo ainda depende da definição da integração e de suas credenciais/protocolo.
+
+## Interface de linha de comando
+
+Compile e execute a partir da raiz do projeto:
+
+```powershell
+javac -d out classes\*.java
+java -cp out AplicacaoCLI
+```
+
+A CLI oferece menus para Aluno, Professor e Secretaria. O cadastro de Secretaria é aberto e concede acesso administrativo. A opção de cobrança apenas marca eventos como enviados na simulação local; ela não se comunica com um sistema externo. Os arquivos de dados são criados na pasta `dados/` relativa ao diretório de execução.
+
 
